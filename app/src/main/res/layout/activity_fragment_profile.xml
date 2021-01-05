@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fragmenthomebackground">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile Info"
+        android:id="@+id/tvRegister"
+        android:fontFamily="@font/comfortaabold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="35dp"
+        android:textColor="#363636"
+        />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Name Here"
+        android:padding="12dp"
+        android:inputType="text"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Email Here"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Your Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Your Location Here"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:padding="12dp"
+        android:inputType="text"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:padding="12dp"
+        android:inputType="number"
+        android:height="50dp"
+        android:background="@drawable/registerborder"
+        android:gravity="center"
+        android:hint="Update Phone Number" />
+
+    <EditText
+        android:id="@+id/etPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:background="@drawable/registerborder"
+        android:gravity="center"
+        android:hint="Upload Imageto change Profile  image" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:width="160dp"
+        android:background="@drawable/buttonradius"
+        android:fontFamily="@font/comfortaabold"
+        android:gravity="center"
+        android:text="Update"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+</LinearLayout>

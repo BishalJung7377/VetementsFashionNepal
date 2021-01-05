@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/tvRegister"
+        android:fontFamily="@font/comfortaabold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="40dp"
+        android:textColor="#363636"
+        />
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name Here"
+        android:padding="12dp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email Here"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Location Here"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:padding="12dp"
+        android:inputType="text"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:gravity="center"
+        android:background="@drawable/registerborder"
+        />
+    <EditText
+        android:id="@+id/etGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:padding="12dp"
+        android:height="50dp"
+        android:background="@drawable/registerborder"
+        android:gravity="center"
+        android:hint="Attach Your Gender Here" />
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:padding="12dp"
+        android:inputType="number"
+        android:height="50dp"
+        android:background="@drawable/registerborder"
+        android:gravity="center"
+        android:hint="Your Phone Number" />
+
+    <EditText
+        android:id="@+id/etPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:layout_marginRight="20dp"
+        android:height="50dp"
+        android:background="@drawable/registerborder"
+        android:gravity="center"
+        android:hint="Attach Your Photo Here" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnregister"
+        android:gravity="center"
+        android:width="160dp"
+        android:background="@drawable/buttonradius"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="@font/comfortaabold"
+        />
+
+
+
+
+
+
+</LinearLayout>
