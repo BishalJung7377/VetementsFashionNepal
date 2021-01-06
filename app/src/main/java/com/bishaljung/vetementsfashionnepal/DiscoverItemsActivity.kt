@@ -9,12 +9,12 @@ import com.bishaljung.vetementsfashionnepal.Fragments.CartFragments
 import com.bishaljung.vetementsfashionnepal.Fragments.FavouritesFragment
 import com.bishaljung.vetementsfashionnepal.Fragments.HomeFragments
 import com.bishaljung.vetementsfashionnepal.Fragments.ProfileFragments
+import com.bishaljung.vetementsfashionnepal.model.ItemCartModel
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DiscoverItemsActivity : AppCompatActivity() {
     private lateinit var fragmentCont: FrameLayout
     private lateinit var botommenu: BottomNavigationView
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,8 @@ class DiscoverItemsActivity : AppCompatActivity() {
 
     }
     private val navListener =
-        BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        BottomNavigationView.OnNavigationItemSelectedListener {
+            item ->
             var selectedFragment: Fragment? = null
             when (item.itemId) {
              R.id.nav_home -> selectedFragment = HomeFragments()
