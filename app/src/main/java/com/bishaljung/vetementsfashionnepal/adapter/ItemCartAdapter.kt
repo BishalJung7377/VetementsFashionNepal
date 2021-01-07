@@ -18,16 +18,10 @@ class ItemCartAdapter(
         val context: CartFragments
         ): RecyclerView.Adapter<ItemCartAdapter.ItemCartViewHolder>(){
                 class ItemCartViewHolder(view: View): RecyclerView.ViewHolder(view){
-                        val imgitemimage: ImageView
-                        val tvitempiece: TextView
-                        val tvitemname: TextView
-                        val tvitemprice: TextView
-                        init {
-                                imgitemimage = view.findViewById(R.id.imgitemimage)
-                                tvitempiece = view.findViewById(R.id.tvitempiece)
-                                tvitemname = view.findViewById(R.id.tvitemname)
-                                tvitemprice = view.findViewById(R.id.tvitemprice)
-                        }
+                        val imgitemimage: ImageView = view.findViewById(R.id.imgitemimage)
+                        val tvitempiece: TextView = view.findViewById(R.id.tvitempiece)
+                        val tvitemname: TextView = view.findViewById(R.id.tvitemname)
+                        val tvitemprice: TextView = view.findViewById(R.id.tvitemprice)
                 }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemCartViewHolder {
@@ -43,8 +37,14 @@ class ItemCartAdapter(
 
 
                 val selecteditems = cartItemlist[position]
-                Glide.with(context).load(selecteditems.itemImage)
-                        .into(holder.imgitemimage)
+                if(selecteditems.itemImage==null){
+                        holder.imgitemimage
+                }
+                else {
+
+                        Glide.with(context).load(selecteditems.itemImage)
+                                .into(holder.imgitemimage)
+                }
                 holder.tvitemname.text = selecteditems.itemName
                 holder.tvitemprice.text = selecteditems.itemPrice
                 holder.tvitempiece.text = selecteditems.itemPiece

@@ -30,7 +30,7 @@ class CartFragments : Fragment() {
 
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
-//        recyclerView= view?.findViewById(R.id.recyclerView)
+          recyclerView=requireView().findViewById(R.id.recyclerView)
         cartItems()
         recyclerView.apply {
             layoutManager = LinearLayoutManager(this.context)

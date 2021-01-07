@@ -32,7 +32,7 @@ class DiscoverItemsActivity : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomnavigation)
         bottomNav.setOnNavigationItemSelectedListener(navListener)
 
-        supportFragmentManager.beginTransaction().replace(R.id.fragmentcontainer, HomeFragments()).commit()
+    supportFragmentManager.beginTransaction().replace(R.id.fragmentcontainer, HomeFragments()).commit()
 
     }
     private val navListener =
