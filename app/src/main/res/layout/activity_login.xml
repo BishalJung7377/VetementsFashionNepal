@@ -96,7 +96,6 @@
         android:textAlignment="center"
         android:layout_marginLeft="55dp"
         android:fontFamily="@font/comfortaabold"
-
         />
 
 

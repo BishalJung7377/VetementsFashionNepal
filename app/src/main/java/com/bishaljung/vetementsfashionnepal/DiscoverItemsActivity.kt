@@ -20,10 +20,11 @@ class DiscoverItemsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar()!!.hide();
+        getSupportActionBar()!!.hide()
         this.getWindow().setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_discover_items)
         fragmentCont = findViewById(R.id.fragmentcontainer)
@@ -32,18 +33,19 @@ class DiscoverItemsActivity : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomnavigation)
         bottomNav.setOnNavigationItemSelectedListener(navListener)
 
-    supportFragmentManager.beginTransaction().replace(R.id.fragmentcontainer, HomeFragments()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragmentcontainer, HomeFragments())
+            .commit()
 
     }
+
     private val navListener =
-        BottomNavigationView.OnNavigationItemSelectedListener {
-            item ->
+        BottomNavigationView.OnNavigationItemSelectedListener { item ->
             var selectedFragment: Fragment? = null
             when (item.itemId) {
-             R.id.nav_home -> selectedFragment = HomeFragments()
-              R.id.nav_favourites -> selectedFragment = FavouritesFragment()
-               R.id.nav_cart -> selectedFragment = CartFragments()
-               R.id.nav_user -> selectedFragment = ProfileFragments()
+                R.id.nav_home -> selectedFragment = HomeFragments()
+                R.id.nav_favourites -> selectedFragment = FavouritesFragment()
+                R.id.nav_cart -> selectedFragment = CartFragments()
+                R.id.nav_user -> selectedFragment = ProfileFragments()
             }
             if (selectedFragment != null) {
                 getSupportFragmentManager().beginTransaction().replace(
@@ -56,106 +58,6 @@ class DiscoverItemsActivity : AppCompatActivity() {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

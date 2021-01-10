@@ -7,7 +7,7 @@
     android:layout_height="wrap_content">
 
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgitemimage"
         android:layout_width="109dp"
         android:layout_height="87dp"
@@ -20,7 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.327"
-        android:src="@drawable/noimg"
         tools:ignore="MissingConstraints" />
 
     <TextView

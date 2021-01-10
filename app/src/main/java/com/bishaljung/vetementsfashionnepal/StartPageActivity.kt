@@ -10,7 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 
 class StartPageActivity : AppCompatActivity() {
-    private  lateinit var title: TextView
+    private lateinit var title: TextView
     private lateinit var loginbtn: Button
     private lateinit var registerbtn: Button
 
@@ -19,22 +19,23 @@ class StartPageActivity : AppCompatActivity() {
         getSupportActionBar()!!.hide();
         this.getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_startpage)
 
-        title= findViewById(R.id.tvtitle)
+        title = findViewById(R.id.tvtitle)
         loginbtn = findViewById(R.id.btnlogin)
-        registerbtn =  findViewById(R.id.btnregister)
+        registerbtn = findViewById(R.id.btnregister)
 
-        loginbtn.setOnClickListener{
+        loginbtn.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        registerbtn.setOnClickListener{
+        registerbtn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
-        }
     }
+}

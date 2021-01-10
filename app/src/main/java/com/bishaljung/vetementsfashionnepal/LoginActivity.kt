@@ -10,11 +10,11 @@ import androidx.appcompat.app.AlertDialog
 
 class LoginActivity : AppCompatActivity() {
 
-    private   lateinit var backIc: ImageView
+    private lateinit var backIc: ImageView
     private lateinit var logIntxt: TextView
     private lateinit var vetementTitle: TextView
     private lateinit var vIcn: ImageView
-    private lateinit var  emailSec: EditText
+    private lateinit var emailSec: EditText
     private lateinit var passwordSec: EditText
     private lateinit var forgetPass: TextView
     private lateinit var btnLogIn: Button
@@ -25,12 +25,13 @@ class LoginActivity : AppCompatActivity() {
         getSupportActionBar()!!.hide();
         this.getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
 
-        backIc= findViewById(R.id.backIcn)
+        backIc = findViewById(R.id.backIcn)
         logIntxt = findViewById(R.id.tvlogIntxt)
         vetementTitle = findViewById(R.id.tvtitlelogin)
         vIcn = findViewById(R.id.imageV)
@@ -39,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
         forgetPass = findViewById(R.id.tvforrgetpass)
         btnLogIn = findViewById(R.id.btnIdlogin)
 
-        backIc.setOnClickListener{
+        backIc.setOnClickListener {
             val intent = Intent(this, StartPageActivity::class.java)
             startActivity(intent)
         }

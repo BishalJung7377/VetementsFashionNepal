@@ -6,12 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class FavouritesFragment: Fragment() {
+class FavouritesFragment : Fragment() {
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(com.bishaljung.vetementsfashionnepal.R.layout.activity_fragment_favourite, container, false)
+        return inflater.inflate(
+            com.bishaljung.vetementsfashionnepal.R.layout.activity_fragment_favourite,
+            container,
+            false
+        )
     }
 }
