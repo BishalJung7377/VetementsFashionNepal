@@ -15,7 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VetementsFashionNepal">
-        <activity android:name=".DiscoverItemsActivity"></activity>
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DiscoverItemsActivity" />
         <activity
             android:name=".LoginActivity"
             android:parentActivityName=".StartPageActivity" />
@@ -23,11 +30,7 @@
             android:name=".RegisterActivity"
             android:parentActivityName=".StartPageActivity" />
         <activity android:name=".StartPageActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
